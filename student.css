@@ -1,0 +1,76 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #88AB8E;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #AFC8AD;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position container relatively for absolute positioning of images */
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
+.intro-box {
+    border: 5px solid #2a3f2d; /* Add border */
+    padding: 20px; /* Add padding */
+    flex: 1; /* Fill remaining space in main */
+    margin-bottom: 20px; /* Add margin at the bottom */
+    overflow: auto; /* Add overflow to enable scrolling if content exceeds box */
+}
+
+h2 {
+    flex: content;
+    border: box 12px;
+}
+
+p {
+    color: #1b281d;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #1b281d;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.course h3 {
+    margin-top: 0;
+    color: #1b281d;
+}
+
+.course p {
+    margin-bottom: 10px;
+}
+
+.course iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Adjust the width of the images */
+.random-images,
+.random {
+    width: 150px;
+    height: auto;
+}

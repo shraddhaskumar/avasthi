@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Survey</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Survey</h1>
+        <form action="#" method="POST">
+            <!-- Demographic Questions -->
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <select id="age" name="age" required>
+                    <option value="">Select...</option>
+                    <option value="Under 18">Under 18</option>
+                    <option value="18-34">18-34</option>
+                    <option value="35-56">35-56</option>
+                    <option value="56 and above">56 and above</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Non-binary"> Non-binary</label>
+                <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+            </div>
+
+            <div class="form-group">
+                <label for="occupation">Occupation:</label>
+                <select id="occupation" name="occupation" required>
+                    <option value="">Select...</option>
+                    <option value="Student">Student</option>
+                    <option value="Working professional">Working professional</option>
+                    <option value="Non-Working professional">Non-Working professional</option>
+                    <option value="Senior Citizen">Senior Citizen</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Over the past month, how often have you felt nervous, anxious, or on edge?</label>
+                <label><input type="radio" name="nervousness" value="Never" required> Never</label>
+                <label><input type="radio" name="nervousness" value="Rarely"> Rarely</label>
+                <label><input type="radio" name="nervousness" value="Sometimes"> Sometimes</label>
+                <label><input type="radio" name="nervousness" value="Often"> Often</label>
+                <label><input type="radio" name="nervousness" value="Always"> Always</label>
+            </div>
+
+            <div class="form-group">
+                <label>Over the past month, how often have you felt down, depressed, or hopeless?</label>
+                <label><input type="radio" name="depression" value="Never" required> Never</label>
+                <label><input type="radio" name="depression" value="Rarely"> Rarely</label>
+                <label><input type="radio" name="depression" value="Sometimes"> Sometimes</label>
+                <label><input type="radio" name="depression" value="Often"> Often</label>
+                <label><input type="radio" name="depression" value="Always"> Always</label>
+            </div>
+
+            <div class="form-group">
+                <label>How often do you feel that you lack companionship or feel isolated from others?</label>
+                <label><input type="radio" name="isolation" value="Never" required> Never</label>
+                <label><input type="radio" name="isolation" value="Rarely"> Rarely</label>
+                <label><input type="radio" name="isolation" value="Sometimes"> Sometimes</label>
+                <label><input type="radio" name="isolation" value="Often"> Often</label>
+                <label><input type="radio" name="isolation" value="Always"> Always</label>
+            </div>
+
+            <div class="form-group">
+                <label for="stress-level">On a scale of 1 to 10, how would you rate your current level of stress?</label>
+                <input type="number" id="stress-level" name="stress-level" min="1" max="10" required>
+            </div>
+
+            <div class="form-group">
+                <label>What are your primary sources of stress? (Check all that apply)</label>
+                <label><input type="checkbox" name="stress-sources" value="Work/school"> Work/school</label>
+                <label><input type="checkbox" name="stress-sources" value="Financial issues"> Financial issues</label>
+                <label><input type="checkbox" name="stress-sources" value="Relationships"> Relationships</label>
+                <label><input type="checkbox" name="stress-sources" value="Health concerns"> Health concerns</label>
+                <label><input type="checkbox" name="stress-sources" value="Other"> Other</label>
+            </div>
+
+            <div class="form-group">
+                <label>How satisfied are you with your life, overall?</label>
+                <label><input type="radio" name="life-satisfaction" value="Very satisfied" required> Very satisfied</label>
+                <label><input type="radio" name="life-satisfaction" value="Satisfied"> Satisfied</label>
+                <label><input type="radio" name="life-satisfaction" value="Neutral"> Neutral</label>
+                <label><input type="radio" name="life-satisfaction" value="Dissatisfied"> Dissatisfied</label>
+                <label><input type="radio" name="life-satisfaction" value="Very dissatisfied"> Very dissatisfied</label>
+            </div>
+
+            <div class="form-group">
+                <label>How often do you experience positive feelings such as happiness, joy, or contentment?</label>
+                <label><input type="radio" name="positive-feelings" value="Never" required> Never</label>
+                <label><input type="radio" name="positive-feelings" value="Rarely"> Rarely</label>
+                <label><input type="radio" name="positive-feelings" value="Sometimes"> Sometimes</label>
+                <label><input type="radio" name="positive-feelings" value="Often"> Often</label>
+                <label><input type="radio" name="positive-feelings" value="Always"> Always</label>
+            </div>
+
+            <div class="form-group">
+                <label>Have you ever utilized any mental health resources or services?</label>
+                <label><input type="radio" name="resources-utilized" value="Yes" required> Yes</label>
+                <label><input type="radio" name="resources-utilized" value="No"> No</label>
+            </div>
+
+            <div class="form-group">
+                <label>If you have utilized mental health resources, how satisfied were you with the support you received?</label>
+                <label><input type="radio" name="resources-satisfaction" value="Very satisfied"> Very satisfied</label>
+                <label><input type="radio" name="resources-satisfaction" value="Satisfied"> Satisfied</label>
+                <label><input type="radio" name="resources-satisfaction" value="Neutral"> Neutral</label>
+                <label><input type="radio" name="resources-satisfaction" value="Dissatisfied"> Dissatisfied</label>
+                <label><input type="radio" name="resources-satisfaction" value="Very dissatisfied"> Very dissatisfied</label>
+            </div>
+
+            <div class="form-group">
+                <label>How often do you engage in physical activity or exercise?</label>
+                <label><input type="radio" name="physical-activity" value="Never" required> Never</label>
+                <label><input type="radio" name="physical-activity" value="Rarely"> Rarely</label>
+                <label><input type="radio" name="physical-activity" value="Sometimes"> Sometimes</label>
+                <label><input type="radio" name="physical-activity" value="Often"> Often</label>
+                <label><input type="radio" name="physical-activity" value="Always"> Always</label>
+            </div>
+
+            <div class="form-group">
+                <label>How would you rate your sleep quality on an average night?</label>
+                <label><input type="radio" name="sleep-quality" value="Very good" required> Very good</label>
+                <label><input type="radio" name="sleep-quality" value="Good"> Good</label>
+                <label><input type="radio" name="sleep-quality" value="Fair"> Fair</label>
+                <label><input type="radio" name="sleep-quality" value="Poor"> Poor</label>
+                <label><input type="radio" name="sleep-quality" value="Very poor"> Very poor</label>
+            </div>
+
+            <div class="form-group">
+                <label>How often do you engage in activities that you enjoy or that make you feel relaxed?</label>
+                <label><input type="radio" name="relaxing-activities" value="Never" required> Never</label>
+                <label><input type="radio" name="relaxing-activities" value="Rarely"> Rarely</label>
+                <label><input type="radio" name="relaxing-activities" value="Sometimes"> Sometimes</label>
+                <label><input type="radio" name="relaxing-activities" value="Often"> Often</label>
+                <label><input type="radio" name="relaxing-activities" value="Always"> Always</label>
+            </div>
+
+            <div class="form-group">
+                <label for="barriers">What barriers do you face when trying to access mental health care or support?</label>
+                <textarea id="barriers" name="barriers" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="additional-comments">Is there anything else you would like to share about your mental health experiences?</label>
+                <textarea id="additional-comments" name="additional-comments" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="button" onclick="submitForm()">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function submitForm() {
+            const occupation = document.getElementById('occupation').value;
+
+            // Redirect based on occupation
+            switch (occupation) {
+                case 'Student':
+                    window.location.href = 'student.html';
+                    break;
+                case 'Working professional':
+                    window.location.href = 'working_professional.html';
+                    break;
+                case 'Non-Working professional':
+                    window.location.href = 'non_working_professional.html';
+                    break;
+                case 'Senior Citizen':
+                    window.location.href = 'senior_citizen.html';
+                    break;
+                default:
+                    // Handle other cases if needed
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
+In this example, when you click the "Submit" button, it will check the selected occupation and redirect to the corresponding page based on the occupation option. You need to replace 'student_page.html', 'working_professional_page.html', 'non_working_professional_page.html', and 'senior_citizen_page.html' with the actual URLs of the pages you want to redirect to based on the occupation selection.
+
+
+
+
+
+
+
+</body>
+</html>
