@@ -74,3 +74,8 @@ p {
     width: 150px;
     height: auto;
 }
+button{
+    border-radius: 10px;
+    background-color: #2a3f2d;
+    color: #88AB8E;
+}
