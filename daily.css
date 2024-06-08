@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('bg.jpg') no-repeat center center fixed; /* Add your image path here */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #88AB8E; /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    font-size: 12px; /* Small font size for description */
+}
+
+li .actions {
+    display: flex;
+    gap: 5px;
+}
+
+li .actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.task-page-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #465645;
+    color: rgba(187, 213, 192, 0.51);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.task-page-button:hover {
+    background-color: #d9eedd;
+    color:#2a2f2a
+}
+
+
+li .actions .InProgress {
+    background-color: rgb(182, 56, 56);
+    color: white;
+}
+
+li .actions .InProgress:hover {
+    background-color: rgb(246, 168, 168);
+}
+
+li .actions .Complete {
+    background-color:#29a440;
+    color: white;
+}
+
+li .actions .Complete:hover {
+    background-color:#7ae27d;
+}
