@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="./planner.css">
+</head>
+<body>
+    <header>
+        <h1>Daily Planner</h1>
+    </header>
+    <main>
+        <section class="task-input">
+            <form id="taskForm">
+                <input type="text" id="taskInput" placeholder="Add a new task..." required>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section class="task-list">
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+    <script src="./planner.js"></script>
+</body>
+</html>
