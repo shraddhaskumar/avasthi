@@ -56,6 +56,24 @@ p {
     margin-top: 0;
     color: #1b281d;
 }
+.task-page-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #465645;
+    color: rgba(187, 213, 192, 0.51);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.task-page-button:hover {
+    background-color: #d9eedd;
+    color:#2a2f2a
+}
+
 
 .course p {
     margin-bottom: 10px;
