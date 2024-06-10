@@ -46,9 +46,9 @@ input{
 button{
     background-color:#88AB8E;
     color:white;
-    width:80px;
+    width:100%;
     height:30px;
     border-color:#88AB8E;
     border-radius:8px;
-
+    margin-bottom:10px;
 }
